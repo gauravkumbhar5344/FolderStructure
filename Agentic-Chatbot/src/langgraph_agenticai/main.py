@@ -36,7 +36,7 @@ def load_langgraph_agenticai_app():
                 return
             
             #Setup the graph based on use case
-            g_key = "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"
+            g_key = "GROQ_API_KEY"
             guardrail_llm = load_guardrail_models(g_key)
             st.write("🔒 Running Guardrails...")
 
@@ -65,4 +65,5 @@ def load_langgraph_agenticai_app():
 
         except Exception as e:
             st.error(f"An error occurred while processing your request: {e}")
+
             return
